@@ -11,7 +11,6 @@
   .slide{display:none;position:relative;min-height:480px}
   .slide.active{display:block}
 
-  /* Cover */
   .cover{padding:60px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px}
   .cover .top-bar{position:absolute;top:0;left:0;right:0;height:4px;background:#C9A04A}
   .cover .eyebrow{font-size:11px;color:#C9A04A;letter-spacing:5px;font-family:sans-serif;text-transform:uppercase;margin-bottom:10px}
@@ -21,23 +20,19 @@
   .cover .desc{font-size:16px;color:#D0D0D0;font-style:italic;margin-bottom:28px}
   .cover .tag{display:inline-block;border:1px solid #C9A04A;color:#C9A04A;padding:6px 22px;border-radius:20px;font-size:13px;letter-spacing:1px;font-family:sans-serif}
 
-  /* Header */
   .slide-header{background:#0D0D1A;padding:18px 32px 14px}
   .slide-header h2{color:#C9A04A;font-size:22px}
   .slide-header .bar{width:48px;height:2px;background:#C9A04A;margin-top:8px}
 
-  /* Bullets */
   .bullets{padding:18px 44px 14px;list-style:none}
   .bullets li{color:#D0D0D0;font-size:15px;line-height:1.65;margin-bottom:13px;padding-left:22px;position:relative}
   .bullets li::before{content:"▸";position:absolute;left:0;color:#C9A04A}
 
-  /* Quote box */
   .quote-box{margin:10px 36px 32px;border-radius:8px;padding:14px 22px;text-align:center}
   .quote-box.gold{background:rgba(201,160,74,.09);border:1px solid #C9A04A;color:#C9A04A}
   .quote-box.red{background:rgba(139,47,47,.18);border:1px solid #8B2F2F;color:#8B2F2F}
   .quote-box p{font-style:italic;font-size:15px;line-height:1.7;white-space:pre-line}
 
-  /* Two col */
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:18px 28px 20px}
   .col-box .col-head{border-radius:6px 6px 0 0;padding:7px 14px}
   .col-box .col-head span{color:#fff;font-weight:bold;font-size:13px;font-family:sans-serif}
@@ -48,17 +43,26 @@
   .common-box{margin:0 28px 28px;background:#0D0D1A;border-left:4px solid #C9A04A;padding:12px 18px;border-radius:6px}
   .common-box p{color:#C9A04A;font-style:italic;font-size:13px;line-height:1.65;white-space:pre-line}
 
-  /* Themes */
   .themes{padding:16px 28px 32px;display:flex;flex-direction:column;gap:16px}
   .theme-row{display:flex;align-items:center;gap:18px}
   .theme-label{background:#8B2F2F;border-radius:6px;padding:9px 16px;min-width:190px;text-align:center;flex-shrink:0}
   .theme-label span{color:#fff;font-size:13px;font-weight:bold;font-family:sans-serif}
   .theme-desc{color:#D0D0D0;font-size:15px;line-height:1.55}
 
-  /* Slide num */
+  /* Slide Munch con immagine */
+  .munch-layout{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:420px}
+  .munch-img{overflow:hidden;background:#0D0D1A;display:flex;align-items:center;justify-content:center}
+  .munch-img img{width:100%;height:100%;object-fit:cover;opacity:.9}
+  .munch-img .placeholder{color:#444;font-size:13px;font-family:sans-serif;text-align:center;padding:20px;line-height:1.6}
+  .munch-text{padding:24px 28px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
+  .munch-text .art-title{color:#C9A04A;font-size:13px;font-style:italic;font-family:sans-serif;margin-bottom:4px}
+  .munch-point{padding-left:18px;position:relative;color:#D0D0D0;font-size:14px;line-height:1.65}
+  .munch-point::before{content:"▸";position:absolute;left:0;color:#C9A04A}
+  .munch-link{margin-top:auto;background:#0D0D1A;border-left:4px solid #C9A04A;padding:10px 14px;border-radius:6px}
+  .munch-link p{color:#C9A04A;font-style:italic;font-size:13px;line-height:1.6}
+
   .slide-num{position:absolute;bottom:12px;right:18px;color:#C9A04A;font-size:11px;font-family:sans-serif;opacity:.65}
 
-  /* Nav */
   .nav{display:flex;align-items:center;gap:20px;margin-top:24px}
   .nav button.arrow{background:#C9A04A;color:#1A1A2E;border:none;border-radius:8px;padding:10px 24px;font-size:20px;font-weight:bold;cursor:pointer;transition:all .2s}
   .nav button.arrow:disabled{background:#2a2a2a;color:#555;cursor:default}
@@ -83,7 +87,7 @@
       <p class="desc">Riassunto, analisi e collegamenti artistici</p>
       <span class="tag">Novella per un anno · 1911</span>
     </div>
-    <div class="slide-num">1 / 7</div>
+    <div class="slide-num">1 / 8</div>
   </div>
 
   <!-- SLIDE 2 – Ambientazione -->
@@ -108,7 +112,7 @@
         </ul></div>
       </div>
     </div>
-    <div class="slide-num">2 / 7</div>
+    <div class="slide-num">2 / 8</div>
   </div>
 
   <!-- SLIDE 3 – Trama 1 -->
@@ -121,7 +125,7 @@
       <li>Querela per diffamazione contro figlio del sindaco e assessore Fazio</li>
       <li>Rosinella implora il giudice di far ritirare la querela: il padre è «impazzito»</li>
     </ul>
-    <div class="slide-num">3 / 7</div>
+    <div class="slide-num">3 / 8</div>
   </div>
 
   <!-- SLIDE 4 – Rivelazione -->
@@ -134,7 +138,7 @@
     </ul>
     <div class="quote-box gold"><p>«Io sono stato assassinato, signor giudice!»
 unico capitale rimasto: la iella.</p></div>
-    <div class="slide-num">4 / 7</div>
+    <div class="slide-num">4 / 8</div>
   </div>
 
   <!-- SLIDE 5 – Climax -->
@@ -147,7 +151,7 @@ unico capitale rimasto: la iella.</p></div>
       <li>Chiàrchiaro esce esultante: «Sono ricco! Istruisca il processo!»</li>
     </ul>
     <div class="quote-box red"><p>Finale grottesco e tragico: la maschera diventa l'unica salvezza.</p></div>
-    <div class="slide-num">5 / 7</div>
+    <div class="slide-num">5 / 8</div>
   </div>
 
   <!-- SLIDE 6 – Temi -->
@@ -159,10 +163,10 @@ unico capitale rimasto: la iella.</p></div>
       <div class="theme-row"><div class="theme-label"><span>Ribellione paradossale</span></div><p class="theme-desc">Accettare la forma per ribellarsi alla forma</p></div>
       <div class="theme-row"><div class="theme-label"><span>Critica sociale</span></div><p class="theme-desc">Alla superstizione, al pregiudizio, all'ipocrisia giudiziaria</p></div>
     </div>
-    <div class="slide-num">6 / 7</div>
+    <div class="slide-num">6 / 8</div>
   </div>
 
-  <!-- SLIDE 7 – Munch -->
+  <!-- SLIDE 7 – Munch confronto -->
   <div class="slide" id="s7">
     <div class="slide-header"><h2>Il parallelo con «L'urlo» di Edvard Munch (1893)</h2><div class="bar"></div></div>
     <div class="two-col">
@@ -185,7 +189,39 @@ unico capitale rimasto: la iella.</p></div>
     </div>
     <div class="common-box"><p>Punto comune: l'individuo schiacciato dallo sguardo della società perde la propria autenticità.
 Espressionismo visivo (Munch) ↔ Umorismo tragico (Pirandello): due linguaggi, un'unica angoscia moderna.</p></div>
-    <div class="slide-num">7 / 7</div>
+    <div class="slide-num">7 / 8</div>
+  </div>
+
+  <!-- SLIDE 8 – Munch con immagine ✦ NUOVA -->
+  <div class="slide" id="s8">
+    <div class="slide-header"><h2>«L'urlo» – Edvard Munch (1893): analisi visiva</h2><div class="bar"></div></div>
+    <div class="munch-layout">
+
+      <!-- SOSTITUISCI src con il tuo link GitHub raw -->
+      <div class="munch-img">
+        <img src="QUI_IL_TUO_LINK_GITHUB_RAW" alt="L'urlo di Edvard Munch"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="placeholder" style="display:none">
+          🖼️<br><br>Inserisci qui il link<br>della tua immagine GitHub<br><br>
+          <code style="font-size:11px;color:#666">src="QUI_IL_TUO_LINK"</code>
+        </div>
+      </div>
+
+      <div class="munch-text">
+        <p class="art-title">Edvard Munch, <em>L'urlo</em>, 1893 — olio, tempera e pastello su cartone</p>
+
+        <p class="munch-point">Figura centrale deformata dall'angoscia: il volto si dissolve in un grido senza suono</p>
+        <p class="munch-point">Il paesaggio vorticoso riflette lo stato interiore del soggetto: la natura amplifica il terrore</p>
+        <p class="munch-point">Le due figure sullo sfondo restano indifferenti → lo sguardo degli altri come minaccia</p>
+        <p class="munch-point">Colori accesi e distorti: linguaggio espressionista dell'emozione pura</p>
+
+        <div class="munch-link">
+          <p>Come Chiàrchiaro, la figura di Munch è schiacciata dallo sguardo altrui e urla — lui ad alta voce, Chiàrchiaro trasformandosi in maschera.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="slide-num">8 / 8</div>
   </div>
 
 </div>
@@ -199,7 +235,7 @@ Espressionismo visivo (Munch) ↔ Umorismo tragico (Pirandello): due linguaggi, 
 <p class="hint">Usa le frecce o i punti per navigare · tasto ← → da tastiera</p>
 
 <script>
-  const total = 7;
+  const total = 8;
   let cur = 0;
 
   const dotsEl = document.getElementById('dots');
